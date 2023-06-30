@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../html-and-the-web_personal-website"
+		},
+		{
+			"path": "../../html-and-the-web_div-salad"
+		},
+		{
+			"path": "../../css-basics_social-card"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../css-basics_pokemon-page"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "css-basics_pokemon-page"
+	}
+}

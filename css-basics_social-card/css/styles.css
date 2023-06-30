@@ -4,6 +4,7 @@
 
 body {
   background-color: rgb(237, 237, 237);
+  margin: 25px;
 }
 
 article{
@@ -29,9 +30,11 @@ h1 , h2 ,p {
 }
 
 button{
-  color: blue;
+  color: rgb(72, 163, 243);
   background-color: white;
   border-width: 0;
+  padding: 0px;
+  margin: 0px;;
 }
 
 
