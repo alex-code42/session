@@ -49,7 +49,7 @@ nav li {
 /* -------------------------------------------------------- */
 
 /* 1. These styles should apply to the headline */
-header {
+h1 {
   outline: 2px dashed red;
   font-size: 2rem;
   margin: 0 2rem 0 0;
@@ -114,27 +114,27 @@ footer p {
 }
 
 /* 11. These styles should apply to all lists in the main content */
-FIX_ME {
+main .list {
   outline: 2px dashed red;
   padding: 1rem 2rem;
   background: #caced2;
 }
 
 /* 12. These styles should apply to all list items */
-main li {
+li {
   outline: 2px dashed red;
   margin: 0 0 0.5rem 0;
 }
 
 /* 13. These styles should apply to all nested lists */
-ul ul {
-  outline: 2px dashed red;
+.list .list {
+  outline: 2px dashed red;git
   margin: 0.5rem 0 0 0;
   background-color: #f1f1f1;
 }
 
-/* 14. These styles should apply to all list items in nested lists */
-ul li {
+/* 14. These styles should apply todxd alll list items in nested lists */
+.list .list li {
   outline: 2px dashed red;
   margin: 0;
   color: #2673bb;
