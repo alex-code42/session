@@ -24,6 +24,9 @@ body {
 .teaser-grid {
   min-width: 40rem;
   min-height: 50vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  
 
   /* Add styles to the grid container */
 }
@@ -35,6 +38,8 @@ body {
   font-weight: bold;
   background-size: cover;
   background-position: center;
+  
+
 }
 
 .teaser-grid__teaser--spring {
