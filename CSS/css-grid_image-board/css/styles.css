@@ -50,18 +50,20 @@ body {
 
 .image-board__image--3 {
   /* Add styles here */
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 2;
-  grid-row-end: 5;
+  
 }
 
 .image-board__image--4 {
   /* Add styles here */
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 .image-board__image--5 {
   /* Add styles here */
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 .image-board__image--6 {
