@@ -12,15 +12,17 @@
   <body>
     <h2>Create your Personal Profile</h2>
     <section>
-        <form action="submit">
+        <form>
           <p>We want to get to know you! Please enter your personal information.</p>
           <fieldset>
             <legend>Personal Information</legend>
             
               <label for="firstname">First Name:</label>
               <input name="firstName" id="firstname" type="text">
+
               <label for="lastname">Last Name:</label>
               <input name="lastName" id="lastname" type="text">
+
               <label for="birthday">Birthday</label>
               <input id="birthday" type="date" name="birthday">
           </fieldset>
@@ -35,11 +37,10 @@
                   <option value="cat">Cat</option>
                   <option value="dog">Dog</option>
                   <option value="rat">Rat</option>  
-          </fieldset>
-          <input type="submit" name="Submit"></input>
+                </select>
+                </fieldset>
+                <button type="submit">Submit</button>
         </form>
-        
-  </section>
-  
+    </section>
   </body>
 </html>

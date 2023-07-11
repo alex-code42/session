@@ -29,6 +29,8 @@ function calculateScrollPercentage() {
   
 
   let percentage = Math.round(yPosition * 100 / 1780)
+  
+  
   progressBar.style.width = percentage+'%'
 
 }
