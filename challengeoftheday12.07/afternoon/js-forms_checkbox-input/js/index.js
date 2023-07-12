@@ -26,11 +26,13 @@ form.addEventListener("submit", (event) => {
 
     if (data.tos === "on"){
       alert("Form submitted");
-      showTosError()
+      hideTosError()
+      
     }
     else{
       alert("Click terms of use");
-      hideTosError()
+      showTosError()
+      
     }
   
     
@@ -40,3 +42,9 @@ form.addEventListener("submit", (event) => {
   // eslint-disable-next-line no-alert
   
 });
+
+switch(true){
+  case (numberA > 2):
+  calc = add
+  break;
+}
