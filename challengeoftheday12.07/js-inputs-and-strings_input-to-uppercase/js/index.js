@@ -1,7 +1,24 @@
 console.clear();
 
+const wordsField = document.querySelector('[data-js="first-input"]')
+const button = document.querySelector('[data-js="button-uppercase"]')
+
+
+
+
+
+
+button.addEventListener("click",() => {
+    wordsField.value = wordsField.value.toUpperCase();
+  
+});
+
+
+
 /*
 Convert the input value to uppercase when clicking the button
+
+
 
 [ ] – Assign the input element to a variable
 [ ] – Assign the button element to a variable
