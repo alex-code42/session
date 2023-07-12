@@ -19,7 +19,6 @@ button.addEventListener("click",() => {
     let valueX = secondInput.value
     secondInput.value = firstInput.value.toUpperCase()
     firstInput.value = valueX
-  
 });
 
 const val = radiusInput.value
@@ -32,8 +31,8 @@ box.style.radius = '${radius}'
 rotatio
 box.style.transform = `rotate(()deg)`;
 
-document.body.addEventListener("mousemove" (e) => {
- console.log
-})
+// document.body.addEventListener("mousemove" (e) => {
+//  console.log
+// });
 
 
