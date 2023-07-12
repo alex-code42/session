@@ -14,3 +14,25 @@ Implement the following functionality:
 const firstInput = document.querySelector("[data-js=first-input]");
 const secondInput = document.querySelector("[data-js=second-input]");
 const button = document.querySelector("[data-js=button]");
+
+button.addEventListener("click",() => {
+    let valueX = secondInput.value
+    secondInput.value = firstInput.value.toUpperCase()
+    firstInput.value = valueX
+});
+
+const val = radiusInput.value
+box.style.background = `hsl(${colorVal})`
+
+
+box.style.radius = '${radius}'
+
+
+rotatio
+box.style.transform = `rotate(()deg)`;
+
+// document.body.addEventListener("mousemove" (e) => {
+//  console.log
+// });
+
+
