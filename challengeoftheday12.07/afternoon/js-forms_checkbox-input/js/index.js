@@ -2,10 +2,13 @@ console.clear();
 
 const form = document.querySelector('[data-js="form"]');
 const tosError = document.querySelector('[data-js="tos-error"]');
+const successText = document.querySelector('[data-js="success"]');
 
 function hideTosError() {
   tosError.setAttribute("hidden", "");
 }
+
+successText.style.display = "none";
 
 function showTosError() {
   tosError.removeAttribute("hidden");
@@ -25,8 +28,8 @@ form.addEventListener("submit", (event) => {
     console.log(data.tos)
 
     if (data.tos === "on"){
-      alert("Form submitted");
       hideTosError()
+      successText.style.display = "block";
       
     }
     else{
@@ -43,8 +46,3 @@ form.addEventListener("submit", (event) => {
   
 });
 
-switch(true){
-  case (numberA > 2):
-  calc = add
-  break;
-}
