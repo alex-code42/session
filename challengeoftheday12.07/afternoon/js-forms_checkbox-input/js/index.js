@@ -14,7 +14,7 @@ function showTosError() {
   tosError.removeAttribute("hidden");
 }
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", (event) => { //"parentesis" () curly(brackets),  
   event.preventDefault();
 
 
