@@ -124,6 +124,17 @@ const pixelValues = [
 
 const canvas = document.querySelector('[data-js="canvas"]');
 
+console.log(canvas.values)
+
+for (let y = 0; y < 40;y++ ){
+  for (let i = 0; i < pixelValues.length; i++){
+    const div = document.createElement("div");
+          div.setAttribute("class", "pixel");
+          div.setAttribute("style","background-color:" +pixelValues[y][i]);
+
+          canvas.append(div)
+          
+  }}
 
 // Use the color values in the array `pixelValues` to create "pixel" elements and append them to the `canvas` element.
 
