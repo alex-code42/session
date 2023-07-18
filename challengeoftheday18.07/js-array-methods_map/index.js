@@ -34,7 +34,7 @@ console.log(lowerCaseAnswers)
 // const questionsAndAnswersTogether = null; // ["How often can I use <header>? - As often as you like.", ...]
 
 const questionsAndAnswersTogether = cards.map((card) => {
-  return card.question+" " +card.answer
+  return card.question+" - " +card.answer
 })
 console.log(questionsAndAnswersTogether)
 
@@ -46,7 +46,10 @@ console.log(questionsAndAnswersTogether)
     let one = card.answer.toLowerCase()
     let two =card.question+" "+card.answer 
     let three = card.question+" "+card.answer
-    return( one, two, three)
+    return{
+      question: card.question,
+      answer : card.answer,
+    }
   })
   console.log("letzte Übung")
   console.log(questionAndAnswer)
