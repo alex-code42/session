@@ -24,7 +24,7 @@ const colors = [
 //   console.log(color)
 //   div.setAttribute("class", "color-box")
 //   div.setAttribute("style", "background-color: "+color)
-//   document.body.append(div)
+//   document.body.append(div)s
 // });
 
 function renderColorBox(colors){
