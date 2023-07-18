@@ -23,7 +23,7 @@ handleUserLogin(showWelcomeMessage)
 // 2. Call "handleUserLogin" again but this time write an anonymous function **inside** the function call (i.e. between the round brackets). You can write an anonymous function either:
 
 //    - as an arrow function: ` () => {...}`
-//    - as a regular function: ` function() {...}`
+//    - as a regular function: ` function() {...}`ss
 
 // 3. Implement the logic from the previous from "showWelcomeMessage" inside this anonymous function.
 
