@@ -28,16 +28,16 @@ const colors = [
 // });
 
 function renderColorBox(colors){
-  colors.forEach((color) => {
+  {
   let div = document.createElement("div")
   console.log(color)
   div.setAttribute("class", "color-box")
   div.setAttribute("style", "background-color: "+color)
   document.body.append(div)
-});
+};
 }
 
-renderColorBox(colors)
+colors.forEach((color) => renderColorBox(colors))
 
 
 // In the [`js/index.js`](./js/index.js) file, there is an array `colors` containing some hex codes. Create colored boxes from the array of hex codes using the `forEach` array method.
