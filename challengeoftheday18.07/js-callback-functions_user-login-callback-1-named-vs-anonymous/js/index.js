@@ -8,8 +8,9 @@ function handleUserLogin(onSuccess) {
 // Call handleUserLogin below!
 
 function showWelcomeMessage(){
-  console.log("Welcome Message")
+  console.log("Welcome! You are logged!")
 }
+
 
 handleUserLogin(showWelcomeMessage)
 
@@ -20,6 +21,12 @@ console.log("Welcome You are loggin IN")
 (() => {
   console.log("Welcome you are logged now")
 })();
+
+
+function add(n1,n2){
+  return n1 +n2
+}
+add(2,3)
 
 // 1. Write a function with the "function" keyword named "showWelcomeMessage" which logs the desired text. Then
 //    call the higher order function "handleUserLogin" and pass your callback function "showWelcomeMessage" as the first argument.
