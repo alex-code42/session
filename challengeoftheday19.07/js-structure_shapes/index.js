@@ -1,23 +1,24 @@
 console.clear();
 
+import { GetRandomColor } from "./utils/randomColor.js";
+import { MakeCircle } from "./components/Circle/Circle.js";
+import { MakeSquare } from "./components/Square/Square.js";
+import { MakePentagon } from "./components/Pentagon/Pentagon.js";
+
+let getRandomColor = GetRandomColor();
+
+GetRandomColor();
+
+
+console.log(getRandomColor)
+
 const root = document.getElementById("root");
 
-const circle = document.createElement("div");
-circle.classList.add("circle");
-circle.addEventListener("click", () => {
-  circle.style.backgroundColor = "#ccc";
-});
 
-const square = document.createElement("div");
-square.classList.add("square");
-square.addEventListener("click", () => {
-  square.style.backgroundColor = "#ccc";
-});
 
-const pentagon = document.createElement("div");
-pentagon.classList.add("pentagon");
-pentagon.addEventListener("click", () => {
-  pentagon.style.backgroundColor = "#ccc";
-});
 
+
+const pentagon = MakePentagon();
+const circle = MakeCircle();
+const square = MakeSquare();
 root.append(circle, square, pentagon);
