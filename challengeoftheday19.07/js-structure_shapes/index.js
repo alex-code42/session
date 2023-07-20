@@ -14,10 +14,6 @@ console.log(getRandomColor)
 
 const root = document.getElementById("root");
 
-
-
-
-
 const pentagon = MakePentagon();
 const circle = MakeCircle();
 const square = MakeSquare();
