@@ -6,6 +6,7 @@ export function Card(characterData) {
   // Fill the article element with content.
   const heading = document.createElement("h2");
   heading.textContent = characterData.name;
+  
 
   card.append(heading);
 
