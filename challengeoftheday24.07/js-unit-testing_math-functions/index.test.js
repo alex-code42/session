@@ -16,7 +16,7 @@ test("subtract() returns a negative value if the second argument is greater",()=
     const a = 5;
     const b = 10;
     
-    const result = subtract(5,10);
+    const result = subtract(a,b);
     if (b > a){
         expect(result).toBeLessThan(0);
     }
