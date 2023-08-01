@@ -6,11 +6,24 @@ import { USERS } from "./db";
 
 export default function App() {
   return (
+    <div>
+
+    
     <main className="app">
       <Title text="ClientBoard" />
       <div className="app__card-grid">
-        <Card user={USERS[0]} />
+        {USERS.map((user) => {
+          return(
+            <Card 
+            key={user.id} 
+            name={user.name} 
+            role={user.roles} 
+            about={user.about} />
+          )}     
+        )}
       </div>
     </main>
+    
+    </div>
   );
 }
