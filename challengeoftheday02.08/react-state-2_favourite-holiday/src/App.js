@@ -12,8 +12,6 @@ export default function App() {
     const formElements = event.target.elements;
 
     setmyFavDate(formElements[1].value)
-    
-    
     setmyFavHolliday(formElements[0].value)
   }
 
