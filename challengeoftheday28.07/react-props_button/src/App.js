@@ -1,24 +1,35 @@
-import React from "react";
+import React, { useState } from 'react';
 import "./styles.css";
 
+
 export default function App() {
-  
+
+  const [showArticle, setShowArticle] = useState(false);
   const handleClick = () => {
-   
-    console.log("Whatsup");
+  setShowArticle(!showArticle);
   };
 
   return (
-    <h1>
-      <Button style={{ height: "200px" }} color={"#ffff00"} isdisabled={false} text={"BUTTON"} onClick={handleClick} />
-    </h1>
+    <div>
+      <Button style={{ height: "200px" }} color={"#ffff00"} disabled={false} text={"BUTTON"} onClick={handleClick} />
+      {showArticle && <ImportantArticle name="Hubert" />}
+    </div>
   );
 }
 
-function Button({ color, isdisabled, text, onClick }) {
+function Button({ color, disabled, text, onClick }) {
   return (
-    <button disabled={isdisabled} style={{ backgroundColor: color }} onClick={onClick}>
+    <button disabled={disabled} style={{ backgroundColor: color }} onClick={onClick}>
       {text}
     </button>
+  );
+}
+
+function ImportantArticle({ name }) {
+  return (
+    <article className="myarticle">
+      <h1>This is an important article</h1>
+      <p>This text is about the very important article about {name}</p>
+    </article>
   );
 }
