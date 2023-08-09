@@ -1,13 +1,14 @@
+import { useRouter } from 'next/router';
 import React from 'react';
 import Image from 'next/image';
 
-
-import Link from 'next/link'; // Import the Link component
 import { volumes } from "../../lib/data";
 
-export default function twoTowers () {
-    //Only for this session. Never Again!
-    let film = volumes.find(({slug}) => slug === "the-fellowship-of-the-ring")
+export default function VolumeDetail() {
+    const router = useRouter();
+    const slug =router.query.slug
+    console.log(slug)
+    let film = volumes.find(({slug}) => slug === slug)
     console.log('Film in Fellowship: ', film);
     console.log('Books from film in Fellowship: ', film.books);
     return (
@@ -27,7 +28,10 @@ export default function twoTowers () {
                     <li key={title}>{ordinal}  {title}</li>
                     ))}
                 </ul>
+                <a href="/volumes/">Back</a>
           
         </>
     );
 }
+
+    

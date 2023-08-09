@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link'; // Import the Link component
 import { introduction, volumes } from "../../lib/data";
 
+
 export default function Lotr() {
     console.log("volumes", volumes)
   return (
