@@ -24,7 +24,7 @@ export default function PokemonList() {
 
   return (
     <main>
-      <button type="button" onClick={() => setNumber(number-20)}>Previous Page</button>
+      <button type="button" onClick={() => setNumber(number === 0 ? number : number - 20)}>Previous Page</button>
       <button type="button" onClick={() => setNumber(number+20)}>Next Page</button>
       <ul>
         {pokemon.map(({ name }) => (

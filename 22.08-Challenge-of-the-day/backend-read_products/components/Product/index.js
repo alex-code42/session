@@ -2,17 +2,17 @@ import useSWR from "swr";
 import { useRouter } from "next/router";
 import { StyledLink } from "../Link/Link.styled";
 import { ProductCard } from "./Product.styled";
+import Comments from "../Comments";
 
 export default function Product() {
   const router = useRouter();
   const { id } = router.query;
 
   const { data } = useSWR(id ? `/api/products/${id}` : null);
-    console.log("mydata in product",data);
-    console.log("myID in product",id);
   if (!data) {
     return <h1>Loading...</h1>;
   }
+
 
   return (
     <ProductCard>
@@ -21,6 +21,12 @@ export default function Product() {
       <p>
         Price: {data.price} {data.currency}
       </p>
+      <div className="review">
+  
+      <Comments reviews={data.reviews}/>
+      </div>
+     
+
       <StyledLink href={"/"}>
         Back to all
       </StyledLink>

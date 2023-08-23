@@ -8,7 +8,7 @@ export default function VolumeDetail() {
     const router = useRouter();
     const slug =router.query.slug
     console.log(slug)
-    let film = volumes.find(({slug}) => slug === slug)
+    let film = volumes.find((volume) => volume.slug === slug)
     console.log('Film in Fellowship: ', film);
     console.log('Books from film in Fellowship: ', film.books);
     return (
