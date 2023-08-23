@@ -1,0 +1,56 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/random-character";
+exports.ids = ["pages/random-character"];
+exports.modules = {
+
+/***/ "./pages/random-character/index.js":
+/*!*****************************************!*\
+  !*** ./pages/random-character/index.js ***!
+  \*****************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ YourComponent)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var swr__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swr */ \"swr\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([swr__WEBPACK_IMPORTED_MODULE_1__]);\nswr__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n// Define a default fetcher function that uses the default fetch\nconst defaultFetcher = (url)=>fetch(url).then((res)=>res.json());\nfunction YourComponent() {\n    // Use useSWR with the default fetcher and the URL\n    const { data , error  } = (0,swr__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(\"/api/random-character\", defaultFetcher);\n    if (error) {\n        return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            children: \"Error loading data\"\n        }, void 0, false, {\n            fileName: \"/Users/benutzer/Desktop/spiced-bootcamp/challenges/21.08-Challenge-of-the-day/backend-api-routes_random-character/pages/random-character/index.js\",\n            lineNumber: 11,\n            columnNumber: 12\n        }, this);\n    }\n    if (!data) {\n        return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            children: \"Loading...\"\n        }, void 0, false, {\n            fileName: \"/Users/benutzer/Desktop/spiced-bootcamp/challenges/21.08-Challenge-of-the-day/backend-api-routes_random-character/pages/random-character/index.js\",\n            lineNumber: 15,\n            columnNumber: 12\n        }, this);\n    }\n    // Render your component with the fetched data\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                children: \"Character\"\n            }, void 0, false, {\n                fileName: \"/Users/benutzer/Desktop/spiced-bootcamp/challenges/21.08-Challenge-of-the-day/backend-api-routes_random-character/pages/random-character/index.js\",\n                lineNumber: 21,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"ul\", {\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                        children: [\n                            \"Name: \",\n                            data.firstName\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/benutzer/Desktop/spiced-bootcamp/challenges/21.08-Challenge-of-the-day/backend-api-routes_random-character/pages/random-character/index.js\",\n                        lineNumber: 23,\n                        columnNumber: 13\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                        children: [\n                            \"Last Name: \",\n                            data.lastName\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/benutzer/Desktop/spiced-bootcamp/challenges/21.08-Challenge-of-the-day/backend-api-routes_random-character/pages/random-character/index.js\",\n                        lineNumber: 24,\n                        columnNumber: 13\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                        children: [\n                            \"Age: \",\n                            data.age\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/benutzer/Desktop/spiced-bootcamp/challenges/21.08-Challenge-of-the-day/backend-api-routes_random-character/pages/random-character/index.js\",\n                        lineNumber: 25,\n                        columnNumber: 13\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                        children: [\n                            \"Twitter Name: \",\n                            data.twitterName\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/benutzer/Desktop/spiced-bootcamp/challenges/21.08-Challenge-of-the-day/backend-api-routes_random-character/pages/random-character/index.js\",\n                        lineNumber: 26,\n                        columnNumber: 13\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                        children: [\n                            \"Words: \",\n                            data.words\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/benutzer/Desktop/spiced-bootcamp/challenges/21.08-Challenge-of-the-day/backend-api-routes_random-character/pages/random-character/index.js\",\n                        lineNumber: 27,\n                        columnNumber: 13\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/benutzer/Desktop/spiced-bootcamp/challenges/21.08-Challenge-of-the-day/backend-api-routes_random-character/pages/random-character/index.js\",\n                lineNumber: 22,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/benutzer/Desktop/spiced-bootcamp/challenges/21.08-Challenge-of-the-day/backend-api-routes_random-character/pages/random-character/index.js\",\n        lineNumber: 20,\n        columnNumber: 5\n    }, this);\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9yYW5kb20tY2hhcmFjdGVyL2luZGV4LmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFBQTtBQUF5QjtBQUV6QixnRUFBZ0U7QUFDaEUsTUFBTUMsaUJBQWlCLENBQUNDLE1BQVFDLE1BQU1ELEtBQUtFLElBQUksQ0FBQyxDQUFDQyxNQUFRQSxJQUFJQyxJQUFJO0FBRWxELFNBQVNDLGdCQUFnQjtJQUN0QyxrREFBa0Q7SUFDbEQsTUFBTSxFQUFFQyxLQUFJLEVBQUdDLE1BQUssRUFBRSxHQUFHVCwrQ0FBTUEsQ0FBQyx5QkFBeUJDO0lBRXpELElBQUlRLE9BQU87UUFDVCxxQkFBTyw4REFBQ0M7c0JBQUk7Ozs7OztJQUNkLENBQUM7SUFFRCxJQUFJLENBQUNGLE1BQU07UUFDVCxxQkFBTyw4REFBQ0U7c0JBQUk7Ozs7OztJQUNkLENBQUM7SUFFRCw4Q0FBOEM7SUFDOUMscUJBQ0UsOERBQUNBOzswQkFDQyw4REFBQ0M7MEJBQUc7Ozs7OzswQkFDSiw4REFBQ0M7O2tDQUNLLDhEQUFDQzs7NEJBQUc7NEJBQU9MLEtBQUtNLFNBQVM7Ozs7Ozs7a0NBQ3pCLDhEQUFDRDs7NEJBQUc7NEJBQVlMLEtBQUtPLFFBQVE7Ozs7Ozs7a0NBQzdCLDhEQUFDRjs7NEJBQUc7NEJBQU1MLEtBQUtRLEdBQUc7Ozs7Ozs7a0NBQ2xCLDhEQUFDSDs7NEJBQUc7NEJBQWVMLEtBQUtTLFdBQVc7Ozs7Ozs7a0NBQ25DLDhEQUFDSjs7NEJBQUc7NEJBQVFMLEtBQUtVLEtBQUs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFJbEMsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2JhY2tlbmQtYXBpLXJvdXRlc19yYW5kb20tY2hhcmFjdGVyLy4vcGFnZXMvcmFuZG9tLWNoYXJhY3Rlci9pbmRleC5qcz9hNjVlIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB1c2VTV1IgZnJvbSAnc3dyJztcblxuLy8gRGVmaW5lIGEgZGVmYXVsdCBmZXRjaGVyIGZ1bmN0aW9uIHRoYXQgdXNlcyB0aGUgZGVmYXVsdCBmZXRjaFxuY29uc3QgZGVmYXVsdEZldGNoZXIgPSAodXJsKSA9PiBmZXRjaCh1cmwpLnRoZW4oKHJlcykgPT4gcmVzLmpzb24oKSk7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFlvdXJDb21wb25lbnQoKSB7XG4gIC8vIFVzZSB1c2VTV1Igd2l0aCB0aGUgZGVmYXVsdCBmZXRjaGVyIGFuZCB0aGUgVVJMXG4gIGNvbnN0IHsgZGF0YSAsIGVycm9yIH0gPSB1c2VTV1IoJy9hcGkvcmFuZG9tLWNoYXJhY3RlcicsIGRlZmF1bHRGZXRjaGVyKTtcblxuICBpZiAoZXJyb3IpIHtcbiAgICByZXR1cm4gPGRpdj5FcnJvciBsb2FkaW5nIGRhdGE8L2Rpdj47XG4gIH1cblxuICBpZiAoIWRhdGEpIHtcbiAgICByZXR1cm4gPGRpdj5Mb2FkaW5nLi4uPC9kaXY+O1xuICB9XG5cbiAgLy8gUmVuZGVyIHlvdXIgY29tcG9uZW50IHdpdGggdGhlIGZldGNoZWQgZGF0YVxuICByZXR1cm4gKFxuICAgIDxkaXY+XG4gICAgICA8aDE+Q2hhcmFjdGVyPC9oMT5cbiAgICAgIDx1bD5cbiAgICAgICAgICAgIDxsaT5OYW1lOiB7ZGF0YS5maXJzdE5hbWV9PC9saT5cbiAgICAgICAgICAgIDxsaT5MYXN0IE5hbWU6IHtkYXRhLmxhc3ROYW1lfTwvbGk+XG4gICAgICAgICAgICA8bGk+QWdlOiB7ZGF0YS5hZ2V9PC9saT5cbiAgICAgICAgICAgIDxsaT5Ud2l0dGVyIE5hbWU6IHtkYXRhLnR3aXR0ZXJOYW1lfTwvbGk+XG4gICAgICAgICAgICA8bGk+V29yZHM6IHtkYXRhLndvcmRzfTwvbGk+XG4gICAgICA8L3VsPlxuICAgIDwvZGl2PlxuICApO1xufVxuIl0sIm5hbWVzIjpbInVzZVNXUiIsImRlZmF1bHRGZXRjaGVyIiwidXJsIiwiZmV0Y2giLCJ0aGVuIiwicmVzIiwianNvbiIsIllvdXJDb21wb25lbnQiLCJkYXRhIiwiZXJyb3IiLCJkaXYiLCJoMSIsInVsIiwibGkiLCJmaXJzdE5hbWUiLCJsYXN0TmFtZSIsImFnZSIsInR3aXR0ZXJOYW1lIiwid29yZHMiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/random-character/index.js\n");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+module.exports = require("react/jsx-dev-runtime");
+
+/***/ }),
+
+/***/ "swr":
+/*!**********************!*\
+  !*** external "swr" ***!
+  \**********************/
+/***/ ((module) => {
+
+module.exports = import("swr");;
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("./pages/random-character/index.js"));
+module.exports = __webpack_exports__;
+
+})();

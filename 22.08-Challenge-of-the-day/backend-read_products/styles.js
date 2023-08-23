@@ -25,3 +25,4 @@ export default createGlobalStyle`
     max-width: 50rem;
   }
 `;
+

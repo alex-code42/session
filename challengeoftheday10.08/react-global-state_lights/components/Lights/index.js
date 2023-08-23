@@ -11,32 +11,32 @@ const StyledLights = styled.ul`
   justify-content: center;
 `;
 
-export default function Lights() {
+export default function Lights({isOn, setIsOn}) {
   return (
-    <StyledLights>
+    <StyledLights isOn={isOn} setIsOn={setIsOn}>
       <li>
-        <Light name="Living Room" />
+        <Light name="Living Room" isOn={isOn} setIsOn={setIsOn}/>
       </li>
       <li>
-        <Light name="Kitchen" />
+        <Light name="Kitchen" isOn={isOn} setIsOn={setIsOn}/>
       </li>
       <li>
-        <Light name="Bedroom" />
+        <Light name="Bedroom" isOn={isOn} setIsOn={setIsOn}/>
       </li>
       <li>
-        <Light name="Bathroom" />
+        <Light name="Bathroom" isOn={isOn} setIsOn={setIsOn}/>
       </li>
       <li>
-        <Light name="Garage" />
+        <Light name="Garage" isOn={isOn} setIsOn={setIsOn}/>
       </li>
       <li>
-        <Light name="Porch" />
+        <Light name="Porch" isOn={isOn} setIsOn={setIsOn}/>
       </li>
       <li>
-        <Light name="Garden" />
+        <Light name="Garden" isOn={isOn} setIsOn={setIsOn}/>
       </li>
       <li>
-        <Light name="Office" />
+        <Light name="Office" isOn={isOn} setIsOn={setIsOn}/>
       </li>
     </StyledLights>
   );
